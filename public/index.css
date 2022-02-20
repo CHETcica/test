@@ -1,0 +1,88 @@
+:root {
+  --color-primary-pink: #fea5b7;
+  --color-primary-black: #000;
+  --color-primary-white: #fff;
+
+  --color-secondary-pink: #f178b6;
+  --color-secondary-oceanblue: #7b97f9;
+  --color-secondary-lightblue: #d6f0ff;
+  --color-secondary-bluepasteil: #8ccef2;
+  --color-secondary-puple: #c58cf2;
+  --color-secondary-yellow: #ffef61;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  background-color: var(--color-primary-white);
+}
+
+.navbar {
+  background-color: var(--color-primary-pink);
+}
+.menubar{
+    background-color: var(--color-secondary-lightblue);
+    color: var(--color-secondary-puple) ;
+}
+.border-card-solid{
+  border-color: var(--color-primary-pink) ;
+}
+
+.userimage{
+  z-index: 20;
+}
+.card-body{
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+  
+}
+.text-color-black{
+  color: var(--color-primary-black);
+}
+.card-actions{
+  margin: 0;
+ }
+.card-actions-passion-primary{
+ background-color: var(--color-primary-pink);
+ border: solid  var(--color-primary-pink);
+ padding: auto;
+ border-radius: 3rem;
+}
+.card-actions-passion-secondary{
+  background-color: var(--color-primary-white);
+  border: solid var(--color-primary-pink);
+  padding: auto;
+  border-radius: 3rem;
+ }
+.button_groupt:hover {
+  cursor:pointer;
+  background-color: var(--color-primary-black);
+  border-radius: 50%;
+  
+}
+.bg-footer {
+ background-color: var(--color-secondary-puple);
+}
+.btn-groupt-hidden{
+  display: block;
+}
+.modal-box{
+  max-width: 75%;
+}
+.btn-clost-description{
+  position: absolute;
+  top: 0rem;
+  
+}
+.user-description{
+  width: 100%;
+}
+
+@media (max-width: 639px) { 
+  .btn-groupt-hidden{
+    display: none;
+  }
+  .modal-box{
+    max-width: 100%;
+  }
+ }
