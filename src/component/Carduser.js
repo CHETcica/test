@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import BinGroupt, { BtnGroupt } from "./BtnGroupt";
+import { BtnGroupt } from "./BtnGroupt";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRandomPhoto } from "../action";
+import { fetchAllUser } from "../action";
 
 const Carduser = () => {
   const users = useSelector((state) => state.users);
   const disPatch = useDispatch();
   useEffect(() => {
-    disPatch(fetchRandomPhoto());
+    disPatch(fetchAllUser());
     console.log(users);
   }, []);
 

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Usersetting from "../component/Usersetting";
 import Userdescription from "../component/Description"
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRandomPhoto } from "../action";
+import { fetchAllUser } from "../action";
 
 const Homepage = () => {
   const users = useSelector((state) => state.users);
@@ -10,7 +10,7 @@ const Homepage = () => {
   
   
   useEffect(() => {
-    disPatch(fetchRandomPhoto());
+    disPatch(fetchAllUser());
     console.log(users);
   }, []);
 
